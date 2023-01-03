@@ -14,7 +14,6 @@ public class AppFrame extends JFrame{
 
         this.setSize(400,700);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        this.setVisible(true);
 
         list = new List();
         header = new Header();
@@ -22,6 +21,8 @@ public class AppFrame extends JFrame{
         //Adding frames into layout
         this.add(list, BorderLayout.CENTER);
         this.add(header,BorderLayout.NORTH);
+
+        this.setVisible(true);
 
         addListeners();
 
